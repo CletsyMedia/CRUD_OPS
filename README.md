@@ -68,7 +68,9 @@ Contributions are welcome! If you have any suggestions, improvements, or feature
 
 ## License
 
-This project is licensed under the MIT License - see the [MIT License](LICENSE) file for details.
+Unless stated otherwise, all code in this CRUD Operation projects are available under the MIT License. Feel free to use them as inspiration or reference for your own projects.
+
+[![License](https://img.shields.io/github/license/CletsyMedia/CRUD_OPS?style=for-the-badge&logo=github)](https://github.com/CletsyMedia/CRUD_OPS/blob/master/LICENSE)
 
 © 2024 CletsyMedia. All rights reserved.
 
