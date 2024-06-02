@@ -24,17 +24,21 @@ const useUserHook = () => {
   const deleteUser = async (userId) => {
     try {
       await axios.delete(`${endpoints.users}/${userId}`);
-      // Filter out the deleted user and update the IDs of the remaining users
-      const updatedUsers = users.filter(user => user.id !== userId)
-                                 .map((user, index) => ({ ...user, id: index + 1 }));
-      setUsers(updatedUsers);
+    
+      // Update the IDs of the remaining users to rearrange them serially
+      setUsers(prevUsers => {
+        const remainingUsers = prevUsers.filter(user => user.id !== userId);
+        return remainingUsers.map((user, index) => ({
+          ...user,
+          id: (index + 1).toString(),
+        }));
+      });
     } catch (error) {
       console.error('Error deleting user:', error);
       // Handle error if necessary
     }
   };
-  
-  
+   
 
   return { users, loading, error, deleteUser };
 };

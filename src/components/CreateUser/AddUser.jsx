@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import axios from 'axios';
 import endpoints from '../Endpoints/Endpoints';
@@ -12,6 +12,27 @@ const AddUser = ({ onAdd, onClose }) => {
     phone: '',
   });
 
+  const [latestId, setLatestId] = useState(0); // State to store the latest ID
+
+  useEffect(() => {
+    const fetchLatestId = async () => {
+      try {
+        const response = await axios.get(endpoints.users);
+        const users = response.data;
+        if (users.length === 0) {
+          setLatestId(0);
+        } else {
+          const maxId = Math.max(...users.map(user => parseInt(user.id)));
+          setLatestId(maxId);
+        }
+      } catch (error) {
+        console.error('Error fetching latest ID:', error);
+      }
+    };
+    fetchLatestId();
+  }, []);
+  
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setUserData({ ...userData, [name]: value });
@@ -19,9 +40,28 @@ const AddUser = ({ onAdd, onClose }) => {
 
   const handleAddUser = async () => {
     try {
-      const response = await axios.post(endpoints.users, userData);
-      onAdd(response.data); // Add the new user to the list
-      onClose(); // Close the modal
+      if (latestId === null) {
+        console.error('Latest ID not loaded yet');
+        return;
+      }
+      
+      // Increment the latest ID to generate a new one
+      const newUserId = latestId + 1;
+
+      // Add the generated ID to the user data
+      const userDataWithId = { ...userData, id: newUserId.toString() }; // Ensure the new ID is a string
+
+      // Send the request with the user data including the custom ID
+      const response = await axios.post(endpoints.users, userDataWithId);
+
+      // Add the new user to the list
+      onAdd(response.data);
+
+      // Close the modal
+      onClose();
+
+      // Update the latest ID
+      setLatestId(newUserId);
     } catch (error) {
       console.error('Error adding user:', error);
       // Handle error if necessary

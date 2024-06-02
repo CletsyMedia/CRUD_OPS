@@ -1,137 +1,18 @@
 {
   "users": [
     {
-      "id": 7,
-      "name": "David Taylor",
-      "username": "DTaylor",
-      "email": "davidtaylor@gmail.com",
-      "phone": "07678901234",
-      "website": "www.davidtaylor.com"
-    },
-    {
-      "id": 8,
-      "name": "Jessica Thomas",
-      "username": "JThomas",
-      "email": "jessicathomas@gmail.com",
-      "phone": "07789012345",
-      "website": "www.jessicathomas.com"
-    },
-    {
-      "id": 9,
-      "name": "Christopher Anderson",
-      "username": "CAnderson",
-      "email": "christopheranderson@gmail.com",
-      "phone": "07890123456",
-      "website": "www.christopheranderson.com"
-    },
-    {
-      "id": 10,
-      "name": "Jennifer Jackson",
-      "username": "JJackson",
-      "email": "jenniferjackson@gmail.com",
-      "phone": "07901234567",
-      "website": "www.jenniferjackson.com"
-    },
-    {
-      "id": 11,
-      "name": "Matthew White",
-      "username": "MWhite",
-      "email": "matthewwhite@gmail.com",
-      "phone": "08012345678",
-      "website": "www.matthewwhite.com"
-    },
-    {
-      "id": 12,
-      "name": "Amanda Harris",
-      "username": "AHarris",
-      "email": "amandaharris@gmail.com",
-      "phone": "08123456789",
-      "website": "www.amandaharris.com"
-    },
-    {
-      "id": 13,
-      "name": "Joshua Martin",
-      "username": "JMartin",
-      "email": "joshuamartin@gmail.com",
-      "phone": "08234567890",
-      "website": "www.joshuamartin.com"
-    },
-    {
-      "id": 14,
-      "name": "Emily Thompson",
-      "username": "EThompson",
-      "email": "emilythompson@gmail.com",
-      "phone": "08345678901",
-      "website": "www.emilythompson.com"
-    },
-    {
-      "id": 15,
-      "name": "Daniel Garcia",
-      "username": "DGarcia",
-      "email": "danielgarcia@gmail.com",
-      "phone": "08456789012",
-      "website": "www.danielgarcia.com"
-    },
-    {
-      "id": 16,
-      "name": "Olivia Martinez",
-      "username": "OMartinez",
-      "email": "oliviamartinez@gmail.com",
-      "phone": "08567890123",
-      "website": "www.oliviamartinez.com"
-    },
-    {
-      "id": 17,
-      "name": "Andrew Robinson",
-      "username": "ARobinson",
-      "email": "andrewrobinson@gmail.com",
-      "phone": "08678901234",
-      "website": "www.andrewrobinson.com"
-    },
-    {
-      "id": 18,
-      "name": "Sophia Clark",
-      "username": "SClark",
-      "email": "sophiaclark@gmail.com",
-      "phone": "08789012345",
-      "website": "www.sophiaclark.com"
-    },
-    {
-      "id": 19,
-      "name": "Joseph Rodriguez",
-      "username": "JRodriguez",
-      "email": "josephrodriguez@gmail.com",
-      "phone": "08890123456",
-      "website": "www.josephrodriguez.com"
-    },
-    {
-      "id": 20,
-      "name": "Madison Lewis",
-      "username": "MLewis",
-      "email": "madisonlewis@gmail.com",
-      "phone": "08901234567",
-      "website": "www.madisonlewis.com"
-    },
-    {
-      "id": 21,
+      "id": "1",
       "name": "Cletus Samuel",
-      "username": "Cletsy",
+      "username": "CletsyMedia",
       "email": "Cletussam12@yahoo.com",
       "phone": "07067748296"
     },
     {
-      "id": 22,
-      "name": "FaithyNnamani",
+      "id": "2",
+      "name": "Faith Nnamani",
       "username": "faithyIfe",
       "email": "FaithyNnamani@gmail.com",
       "phone": "09087654321"
-    },
-    {
-      "id": "a3ac",
-      "name": "Naomi",
-      "username": "Nimsy",
-      "email": "Nimsyy@gmail.com",
-      "phone": "080765432178"
     }
   ]
 }
