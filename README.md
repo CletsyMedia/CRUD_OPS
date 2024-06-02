@@ -2,6 +2,10 @@
 
 This is a simple CRUD (Create, Read, Update, Delete) application built with React for the frontend and JSON Server to simulate a backend REST API. The purpose of this application is to demonstrate how to perform CRUD operations using React components and interact with a simulated backend server using JSON Server.
 
+## Screenshot
+
+![Screenshot](./public/screenshot.png)
+
 ## Features
 
 - **Create:** Add new users to the system.

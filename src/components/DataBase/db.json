@@ -1,11 +1,11 @@
 {
   "users": [
     {
-      "id": "1",
-      "name": "Cletus Samuel",
+      "name": "Cletus Sam",
       "username": "CletsyMedia",
-      "email": "Cletussam12@yahoo.com",
-      "phone": "07067748296"
+      "email": "Cletsy12@yahoo.com",
+      "phone": "07098748296",
+      "id": "1"
     },
     {
       "id": "2",
@@ -13,6 +13,13 @@
       "username": "faithyIfe",
       "email": "FaithyNnamani@gmail.com",
       "phone": "09087654321"
+    },
+    {
+      "id": "3",
+      "name": "Grace Amarachi",
+      "username": "Amarachigcy",
+      "email": "Amarachigcy@gmail.com",
+      "phone": "09806433224556"
     }
   ]
 }
